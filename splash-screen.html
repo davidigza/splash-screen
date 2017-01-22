@@ -1,0 +1,160 @@
+<link rel="import" href="../paper-button/paper-button.html">
+
+<dom-module id="splash-screen">
+    <template>
+    <style>
+      :host {
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: #000;
+      }
+      main{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        overflow: hidden;
+      }
+      main img {
+        transform: scale3d(0,0,0);
+        animation: splash;
+        animation-fill-mode: forwards;
+        animation-duration: 400ms;
+        margin-left: 16px;
+      }
+      main img:first-of-type{
+        margin-left: 0px;
+      }
+
+      main .buttons{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        transform: translateY(100%);
+        animation: buttonsMove;
+        animation-fill-mode: forwards;
+        animation-duration: 225ms;
+        animation-delay: 400ms;
+				z-index: 2;
+      }
+
+      main .buttons paper-button {
+        flex:1;
+        height: 48px;
+        opacity: 0.95;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50), 4px 4px 8px 0 rgba(0,0,0,0.72);
+        border-radius: 100px;
+        font-size: 16px;
+        color: #12092F;
+        letter-spacing: 1px;
+        margin: 0px 24px 16px 24px;
+      }
+
+      main .buttons paper-button.login{
+        background: rgba(0,133,255,0.96);
+      }
+
+
+
+      main .buttons paper-button.register{
+        background: #FFB601;
+      }
+
+      footer {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: opacityFooter;
+        animation-fill-mode: forwards;
+        animation-duration: 10ms;
+        animation-delay: 400ms;
+      }
+      footer span{
+        flex:1;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #868588;
+        letter-spacing: 2px;
+        line-height: 24px;
+        padding-bottom: 16px;
+      }
+
+      @keyframes splash {
+        0% {
+          transform: scale3d(0,0,0);
+          animation-timing-function: ease-in;
+        }
+        70% {
+          transform: scale3d(1.1, 1.1 ,1.1);
+          animation-timing-function: ease-out;
+        }
+        100%{
+          transform: scale3d(1, 1 , 1);
+        }
+      }
+
+      @keyframes opacityFooter{
+        0%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+
+      @keyframes buttonsMove {
+        0%{
+          transform: translateY(80%)
+        }
+        100%{
+          transform: translateY(0%)
+        }
+      }
+
+    </style>
+
+    <main>
+        <img src="assets/P-1.svg" alt="P">
+        <img src="assets/I.svg" alt="I">
+        <img src="assets/E.svg" alt="E">
+        <img src="assets/Z.svg" alt="Z">
+        <img src="assets/A.svg" alt="A">
+        <img src="assets/P-1.svg" alt="P">
+        <img class="last" src="assets/P-1.svg" alt="P">
+         <div class="buttons">
+          <paper-button class="login" on-tap="showForm">Iniciar Session</paper-button>
+          <paper-button class="register" on-tap="showForm">Registrarse</paper-button>
+        </div>
+    </main>
+
+    <footer>
+       <span>By One Way</span>
+    </footer>
+  </template>
+
+    <script>
+        Polymer({
+
+            is: 'splash-screen',
+
+            properties: {
+
+            },
+
+            showForm: function(e) {
+                e.stopPropagation();
+                var action = e.target.className;
+                var event = new Event(action);
+                this.dispatchEvent(event);
+            }
+
+        });
+    </script>
+</dom-module>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>A</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="16" cy="5" r="5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="5" cy="27" r="5"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <circle id="path-5" cx="27" cy="27" r="5"></circle>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="00-inicio-registro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-splash" transform="translate(-201.000000, -288.000000)">
+            <g id="A" transform="translate(201.000000, 288.000000)">
+                <g id="cintas" transform="translate(2.000000, 3.000000)" stroke="#0086FF" stroke-width="2" stroke-linecap="square">
+                    <path d="M7.06029647,5 L16.9694511,24.7945713" id="cintas-A-2" transform="translate(12.014874, 14.897286) scale(1, -1) translate(-12.014874, -14.897286) "></path>
+                    <path d="M0.0497796474,1 L10.0299988,21" id="cintas-A-1" transform="translate(5.039889, 11.000000) scale(1, -1) translate(-5.039889, -11.000000) "></path>
+                    <path d="M17.86,0.794571314 L27.9530248,21" id="cintas-A-3"></path>
+                </g>
+                <g id="poleas" stroke="#00CFFF" stroke-width="4">
+                    <use id="Oval-A-1" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                    <use id="Oval-A-2" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    <use id="Oval-A-3" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

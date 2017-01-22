@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>P-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="5" cy="5" r="5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="5" cy="27" r="5"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <circle id="path-5" cx="27" cy="19" r="5"></circle>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <circle id="path-7" cx="27" cy="5" r="5"></circle>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="00-inicio-registro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-splash" transform="translate(-31.000000, -288.000000)">
+            <g id="P-1" transform="translate(31.000000, 288.000000)">
+                <g id="cintas" fill="#0086FF">
+                    <polygon id="cintas-P-1" points="5 2 27 2 27 0 5 0"></polygon>
+                    <polygon id="cintas-P-2" points="5 24 27 24 27 22 5 22"></polygon>
+                    <polygon id="cintas-P-3" points="0 27 2 27 2 5 0 5"></polygon>
+                    <polygon id="cintas-P-4" points="8 27 10 27 10 5 8 5"></polygon>
+                    <polygon id="cintas-P-5" points="30 19 32 19 32 5 30 5"></polygon>
+                </g>
+                <g id="poleas" stroke="#00CFFF" stroke-width="4">
+                    <use id="Oval-P-1" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                    <use id="Oval-P-2" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    <use id="Oval-P-3" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    <use id="Oval-P-4" mask="url(#mask-8)" xlink:href="#path-7"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
