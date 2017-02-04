@@ -39,7 +39,7 @@
         animation-fill-mode: forwards;
         animation-duration: 225ms;
         animation-delay: 400ms;
-				z-index: 2;
+        z-index: 2;
       }
 
       main .buttons paper-button {
@@ -129,8 +129,8 @@
         <img src="assets/P-1.svg" alt="P">
         <img class="last" src="assets/P-1.svg" alt="P">
          <div class="buttons">
-          <paper-button class="login" on-tap="showForm">Iniciar Session</paper-button>
-          <paper-button class="register" on-tap="showForm">Registrarse</paper-button>
+          <paper-button data-name="login" class="login" on-tap="showForm">Iniciar Session</paper-button>
+          <paper-button data-name="register" class="register" on-tap="showForm">Registrarse</paper-button>
         </div>
     </main>
 
@@ -150,9 +150,8 @@
 
             showForm: function(e) {
                 e.stopPropagation();
-                var action = e.target.className;
-                var event = new Event(action);
-                this.dispatchEvent(event);
+                var action = e.target.dataset.name;
+                this.fire(action);
             }
 
         });
